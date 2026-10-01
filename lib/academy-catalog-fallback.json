@@ -1,0 +1,285 @@
+{
+  "courses": [
+    {
+      "slug": "investing-foundations",
+      "title": "Investing Foundations",
+      "subtitle": "Start here — the free introduction",
+      "description": "A short, free primer on what investing actually is, the difference between a price and a value, and how the ClearGuidance terminal fits into a disciplined process. No prior finance knowledge assumed.",
+      "level": "foundational",
+      "free": true,
+      "order": 1,
+      "lessonCount": 3,
+      "totalDurationMin": 18,
+      "freeLessonCount": 3,
+      "modules": [
+        {
+          "title": "Getting Oriented",
+          "lessons": [
+            {
+              "slug": "what-is-investing",
+              "title": "What Investing Really Is",
+              "summary": "Investing as buying a claim on future cash, not betting on ticker symbols.",
+              "durationMin": 6,
+              "free": true,
+              "hasQuiz": true
+            },
+            {
+              "slug": "price-vs-value-basics",
+              "title": "Price Is What You Pay, Value Is What You Get",
+              "summary": "Why the quoted price and the underlying value are two different things.",
+              "durationMin": 7,
+              "free": true,
+              "hasQuiz": true
+            },
+            {
+              "slug": "how-clearguidance-helps",
+              "title": "How ClearGuidance Fits In",
+              "summary": "Where the terminal, the models, and this Academy support your process.",
+              "durationMin": 5,
+              "free": true,
+              "hasQuiz": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "fair-value-dcf",
+      "title": "Understanding Fair Value & DCF",
+      "subtitle": "The flagship course",
+      "description": "A rigorous, self-contained walk through discounted cash flow valuation — the framework the ClearGuidance terminal is built on. You will learn where fair value comes from, how each assumption moves it, how to read the outputs honestly, and when a DCF is the wrong tool. Each concept links to the live terminal for hands-on reinforcement.",
+      "level": "intermediate",
+      "free": false,
+      "order": 2,
+      "lessonCount": 13,
+      "totalDurationMin": 99,
+      "freeLessonCount": 1,
+      "modules": [
+        {
+          "title": "Value vs. Price",
+          "lessons": [
+            {
+              "slug": "why-fair-value-exists",
+              "title": "Why Fair Value Exists",
+              "summary": "The idea that a business has an intrinsic worth independent of its quote.",
+              "durationMin": 8,
+              "free": true,
+              "hasQuiz": true
+            },
+            {
+              "slug": "the-margin-of-safety",
+              "title": "The Margin of Safety",
+              "summary": "Buying below value as protection against error and uncertainty.",
+              "durationMin": 7,
+              "free": false,
+              "hasQuiz": true
+            }
+          ]
+        },
+        {
+          "title": "Inside the DCF",
+          "lessons": [
+            {
+              "slug": "cash-flows-and-time-value",
+              "title": "Cash Flows and the Time Value of Money",
+              "summary": "Why a dollar tomorrow is worth less than a dollar today.",
+              "durationMin": 9,
+              "free": false,
+              "hasQuiz": true
+            },
+            {
+              "slug": "the-growth-rate",
+              "title": "The Growth Rate",
+              "summary": "How projected earnings growth drives — and distorts — fair value.",
+              "durationMin": 8,
+              "free": false,
+              "hasQuiz": true
+            },
+            {
+              "slug": "the-discount-rate",
+              "title": "The Discount Rate",
+              "summary": "The required return that reflects risk and the time value of money.",
+              "durationMin": 8,
+              "free": false,
+              "hasQuiz": true
+            },
+            {
+              "slug": "the-terminal-multiple",
+              "title": "The Terminal Multiple",
+              "summary": "Capturing value beyond the explicit forecast horizon.",
+              "durationMin": 7,
+              "free": false,
+              "hasQuiz": true
+            }
+          ]
+        },
+        {
+          "title": "Reading Your Results",
+          "lessons": [
+            {
+              "slug": "base-dcf-vs-your-dcf",
+              "title": "Base DCF vs. Your DCF",
+              "summary": "The institutional baseline versus your custom scenario.",
+              "durationMin": 7,
+              "free": false,
+              "hasQuiz": true
+            },
+            {
+              "slug": "upside-and-interpretation",
+              "title": "Upside, Downside, and Honest Interpretation",
+              "summary": "Reading the gap between price and fair value without fooling yourself.",
+              "durationMin": 7,
+              "free": false,
+              "hasQuiz": true
+            },
+            {
+              "slug": "the-sensitivity-matrix",
+              "title": "The Sensitivity Matrix",
+              "summary": "Seeing how fair value shifts across ranges of assumptions.",
+              "durationMin": 8,
+              "free": false,
+              "hasQuiz": true
+            }
+          ]
+        },
+        {
+          "title": "Confidence & Suitability",
+          "lessons": [
+            {
+              "slug": "the-confidence-gauge",
+              "title": "The Confidence Gauge",
+              "summary": "What the gauge measures — assumption aggressiveness, not certainty of return.",
+              "durationMin": 7,
+              "free": false,
+              "hasQuiz": true
+            },
+            {
+              "slug": "dcf-suitability-and-analysts",
+              "title": "DCF Suitability and the Analyst Range",
+              "summary": "A separate signal: is a DCF even the right tool here, and what wide analyst spreads tell you.",
+              "durationMin": 8,
+              "free": false,
+              "hasQuiz": true
+            }
+          ]
+        },
+        {
+          "title": "When DCF Breaks Down",
+          "lessons": [
+            {
+              "slug": "negative-earnings",
+              "title": "Negative Earnings and the Revenue-Driven Model",
+              "summary": "Why unprofitable companies need a different valuation approach.",
+              "durationMin": 8,
+              "free": false,
+              "hasQuiz": true
+            },
+            {
+              "slug": "the-limits-of-dcf",
+              "title": "The Limits of DCF",
+              "summary": "Where the model is fragile and how to use it responsibly.",
+              "durationMin": 7,
+              "free": false,
+              "hasQuiz": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "reading-the-chart",
+      "title": "Reading the Chart",
+      "subtitle": "Price, levels, and timing",
+      "description": "A DCF tells you what a business is worth; the chart tells you what the market is doing about it right now. This course teaches the price-action side of the terminal — support, resistance, the point of control, and sentiment — and how to combine a margin-of-safety entry with sensible timing. Every concept links to the live chart for hands-on reinforcement.",
+      "level": "intermediate",
+      "free": false,
+      "order": 3,
+      "lessonCount": 6,
+      "totalDurationMin": 46,
+      "freeLessonCount": 1,
+      "modules": [
+        {
+          "title": "The Levels That Matter",
+          "lessons": [
+            {
+              "slug": "support-where-demand-shows-up",
+              "title": "Support: Where Demand Shows Up",
+              "summary": "Why prices tend to stop falling at certain levels, and how the terminal draws support.",
+              "durationMin": 8,
+              "free": true,
+              "hasQuiz": true
+            },
+            {
+              "slug": "resistance-where-supply-caps-price",
+              "title": "Resistance: Where Supply Caps Price",
+              "summary": "The mirror image of support — where sellers repeatedly cap advances.",
+              "durationMin": 7,
+              "free": false,
+              "hasQuiz": true
+            },
+            {
+              "slug": "when-levels-break-and-flip",
+              "title": "When Levels Break — and Flip",
+              "summary": "Breakouts, false breaks, and why broken support often becomes new resistance.",
+              "durationMin": 8,
+              "free": false,
+              "hasQuiz": true
+            }
+          ]
+        },
+        {
+          "title": "Volume and Sentiment",
+          "lessons": [
+            {
+              "slug": "point-of-control-the-volume-magnet",
+              "title": "Point of Control: The Volume Magnet",
+              "summary": "The single most-traded price and why it tends to pull price back toward it.",
+              "durationMin": 7,
+              "free": false,
+              "hasQuiz": true
+            },
+            {
+              "slug": "reading-market-sentiment",
+              "title": "Reading Market Sentiment",
+              "summary": "What the bullish / bearish / neutral read means and how to weigh it against your valuation.",
+              "durationMin": 7,
+              "free": false,
+              "hasQuiz": true
+            }
+          ]
+        },
+        {
+          "title": "Synthesis",
+          "lessons": [
+            {
+              "slug": "value-meets-timing",
+              "title": "Putting It Together: Value Meets Timing",
+              "summary": "Combining a margin-of-safety entry with support, resistance, and sentiment.",
+              "durationMin": 9,
+              "free": false,
+              "hasQuiz": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "pricing": {
+    "currency": "usd",
+    "monthly": {
+      "standardAmount": 1900,
+      "bundleAmount": 900
+    },
+    "annual": {
+      "standardAmount": 19000,
+      "bundleAmount": 9000
+    },
+    "note": "Bundle pricing applies automatically at checkout for active ClearGuidance app subscribers."
+  },
+  "links": {
+    "freeCourse": "https://clearguidancestudio.com/academy",
+    "subscribe": "https://clearguidancestudio.com/academy/subscribe",
+    "browse": "https://clearguidancestudio.com/academy"
+  },
+  "generatedAt": "2026-07-05T18:26:16.352Z"
+}
