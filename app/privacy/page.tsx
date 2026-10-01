@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   alternates: { canonical: "/privacy" },
 }
 
-const SUPPORT_EMAIL = "support@clearguidancestudio.com"
+const PRIVACY_EMAIL = "privacy@clearguidance.studio"
 
 export default function PrivacyPage() {
   return (
-    <LegalPage title="Privacy Policy" lastUpdated="May 31, 2026">
+    <LegalPage title="Privacy Policy" lastUpdated="September 4, 2026">
       <LegalSection heading="1. Introduction">
         <p>
           ClearGuidance Studio, Inc. (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting
@@ -212,7 +212,8 @@ export default function PrivacyPage() {
             information
           </li>
           <li>
-            <span className="text-zinc-300 font-semibold">Deletion:</span> Request deletion of your personal information
+            <span className="text-zinc-300 font-semibold">Deletion:</span> Delete your account and personal information
+            at any time — see below
           </li>
           <li>
             <span className="text-zinc-300 font-semibold">Portability:</span> Request transfer of your data to another
@@ -222,10 +223,26 @@ export default function PrivacyPage() {
             <span className="text-zinc-300 font-semibold">Opt-out:</span> Unsubscribe from marketing communications
           </li>
         </ul>
+        <h3 className="text-sm font-bold text-white">8.1 Deleting Your Account</h3>
         <p>
-          To exercise these rights, please contact us at{" "}
-          <a href={`mailto:${SUPPORT_EMAIL}`} className="text-blue-400 hover:text-blue-300 transition-colors">
-            {SUPPORT_EMAIL}
+          You can permanently delete your account and all associated data directly within the app, without contacting
+          us. Go to{" "}
+          <span className="text-zinc-300 font-semibold">Settings &rarr; Account &rarr; Delete Account</span>, then
+          confirm. Deletion is immediate and irreversible: your profile, watchlists, saved analyses, portfolios, academy
+          progress and certificates, and generated reports are permanently removed, along with your login credentials.
+        </p>
+        <p>
+          If you subscribed through the Apple App Store, deleting your account does not automatically cancel that
+          subscription. Apple-managed subscriptions must be cancelled in{" "}
+          <span className="text-zinc-300 font-semibold">
+            iOS Settings &rarr; your Apple Account &rarr; Subscriptions
+          </span>
+          . Subscriptions purchased on the web are cancelled automatically when you delete your account.
+        </p>
+        <p>
+          You may also exercise any of these rights by contacting us at{" "}
+          <a href={`mailto:${PRIVACY_EMAIL}`} className="text-blue-400 hover:text-blue-300 transition-colors">
+            {PRIVACY_EMAIL}
           </a>
         </p>
       </LegalSection>
@@ -237,8 +254,10 @@ export default function PrivacyPage() {
           enforce our agreements.
         </p>
         <p>
-          When you delete your account, we will delete or anonymize your personal information within 30 days, unless we
-          are required to retain it for legal purposes.
+          When you delete your account, we remove your personal information immediately and permanently — including
+          your profile, watchlists, saved analyses, portfolios, academy records, and reports. We may retain a limited
+          subset of information only where required for legal, tax, accounting, or fraud-prevention purposes (for
+          example, transaction records held by our payment processor, Stripe). Deleted content cannot be recovered.
         </p>
       </LegalSection>
 
@@ -272,8 +291,8 @@ export default function PrivacyPage() {
           ClearGuidance Studio, Inc.
           <br />
           Email:{" "}
-          <a href={`mailto:${SUPPORT_EMAIL}`} className="text-blue-400 hover:text-blue-300 transition-colors">
-            {SUPPORT_EMAIL}
+          <a href={`mailto:${PRIVACY_EMAIL}`} className="text-blue-400 hover:text-blue-300 transition-colors">
+            {PRIVACY_EMAIL}
           </a>
           <br />
           Website: clearguidancestudio.com
