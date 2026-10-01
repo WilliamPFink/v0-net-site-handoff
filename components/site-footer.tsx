@@ -1,6 +1,5 @@
 import Link from "next/link"
 import { Building2, BookOpen, Globe, ShieldCheck } from "lucide-react"
-import { AdsenseAd } from "@/components/adsense-ad"
 import { OFFERING_URL } from "@/lib/links"
 
 export function SiteFooter() {
@@ -70,9 +69,6 @@ export function SiteFooter() {
         <span className="text-[10px] font-mono text-zinc-600 uppercase tracking-widest md:flex-1">
           © {new Date().getFullYear()} ClearGuidance Studio
         </span>
-        <div className="flex justify-center md:flex-none">
-          <AdsenseAd />
-        </div>
         <span className="text-[10px] font-mono text-zinc-600 uppercase tracking-widest md:flex-1 md:text-right">
           Where Valuation Meets Conviction
         </span>
