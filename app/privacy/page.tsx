@@ -127,65 +127,11 @@ export default function PrivacyPage() {
             <span className="text-zinc-300 font-semibold">Preference Cookies:</span> To remember your settings and
             preferences
           </li>
-          <li>
-            <span className="text-zinc-300 font-semibold">Advertising Cookies:</span> To serve and measure
-            advertisements through Google AdSense and its partners
-          </li>
         </ul>
+        <p>We do not display third-party advertising and do not use advertising cookies.</p>
         <p>
           You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if
           you do not accept cookies, you may not be able to use some portions of our Service.
-        </p>
-      </LegalSection>
-
-      <LegalSection heading="6a. Advertising and Google AdSense">
-        <p>
-          We use Google AdSense, a third-party advertising service provided by Google LLC, to display advertisements on
-          our Service. Google AdSense uses cookies and similar technologies to serve ads based on your prior visits to
-          our Service and other websites.
-        </p>
-        <ul className="list-disc pl-5 flex flex-col gap-1">
-          <li>
-            Google, as a third-party vendor, uses cookies (including the DoubleClick cookie) to serve ads based on your
-            visits to this and other websites.
-          </li>
-          <li>
-            Google&apos;s use of advertising cookies enables it and its partners to serve ads to you based on your visit
-            to our Service and/or other sites on the Internet.
-          </li>
-          <li>
-            You may opt out of personalized advertising by visiting{" "}
-            <a
-              href="https://www.google.com/settings/ads"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-300 transition-colors"
-            >
-              Google Ads Settings
-            </a>
-            . You can also opt out of third-party vendor cookies at{" "}
-            <a
-              href="https://www.aboutads.info/choices/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-300 transition-colors"
-            >
-              aboutads.info
-            </a>
-            .
-          </li>
-        </ul>
-        <p>
-          For more information on how Google uses data when you use our partners&apos; sites or apps, please review the{" "}
-          <a
-            href="https://policies.google.com/technologies/partner-sites"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-400 hover:text-blue-300 transition-colors"
-          >
-            Google Privacy &amp; Terms
-          </a>{" "}
-          page.
         </p>
       </LegalSection>
 
@@ -196,7 +142,6 @@ export default function PrivacyPage() {
           <li>Supabase: For authentication and data storage — Supabase Privacy Policy</li>
           <li>Vercel: For hosting and analytics — Vercel Privacy Policy</li>
           <li>Financial Modeling Prep: For market data — FMP Privacy Policy</li>
-          <li>Google AdSense: For displaying advertisements — Google Privacy Policy</li>
         </ul>
       </LegalSection>
 
