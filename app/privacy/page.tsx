@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/privacy" },
 }
 
-const PRIVACY_EMAIL = "privacy@clearguidance.studio"
+const PRIVACY_EMAIL = "support@clearguidancestudio.com"
 
 export default function PrivacyPage() {
   return (
