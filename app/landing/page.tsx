@@ -4,8 +4,10 @@ import Link from "next/link"
 import { Fragment, type ReactNode } from "react"
 import { cn } from "@/lib/utils"
 import { OFFERING_URL, STUDIO_URL } from "@/lib/links"
+import type { CtaTrack } from "@/lib/analytics"
 import { Reveal } from "@/components/landing/reveal"
 import { PricingPlans } from "@/components/landing/pricing-plans"
+import { TrackedLink } from "@/components/landing/tracked-link"
 
 // Landing page implemented from Figma "ClearGuidenceStudio" → "LP ver 04"
 // (desktop node 270:9182, mobile node 272:2). Static artwork lives in /public/landing.
@@ -76,10 +78,13 @@ function IconTile({ src, w, h, rgb, size = 48, radius = 16 }: { src: string; w: 
   )
 }
 
-function PrimaryCta({ href, children, className }: { href: string; children: ReactNode; className?: string }) {
+const trialCta = (location: string, label: string): CtaTrack => ({ event: "sign_up", location, label })
+
+function PrimaryCta({ href, track, children, className }: { href: string; track: CtaTrack; children: ReactNode; className?: string }) {
   return (
-    <a
+    <TrackedLink
       href={href}
+      track={track}
       className={cn(
         "relative inline-flex items-center justify-center rounded-full bg-[linear-gradient(to_right,#00d2ff,#0077ff)] px-7 py-3 font-mono text-[14px] font-bold uppercase leading-[1.18] tracking-[-0.28px] text-black whitespace-nowrap",
         "shadow-[0_2px_8px_rgba(0,119,255,0.35),0_0_20px_rgba(0,210,255,0.2),inset_0_1px_0_rgba(255,255,255,0.35)] transition duration-300 ease-out hover:brightness-110 hover:shadow-[0_8px_22px_rgba(0,119,255,0.45),0_0_32px_rgba(0,210,255,0.35),inset_0_1px_0_rgba(255,255,255,0.35)] motion-safe:hover:-translate-y-0.5 motion-safe:active:translate-y-0",
@@ -87,7 +92,7 @@ function PrimaryCta({ href, children, className }: { href: string; children: Rea
       )}
     >
       {children}
-    </a>
+    </TrackedLink>
   )
 }
 
@@ -295,12 +300,13 @@ export default function LandingPage() {
             <a href={STUDIO_URL} className="text-[13px] font-medium leading-4 text-[#94a3b8] transition-colors hover:text-white">
               Sign In
             </a>
-            <a
+            <TrackedLink
               href={OFFERING_URL}
+              track={trialCta("header", "Start Free Trial")}
               className="rounded-full bg-[linear-gradient(to_right,#00d2ff,#0088ff)] px-4 py-1.5 font-mono text-[10px] font-bold uppercase leading-4 text-[#031422] shadow-[0_2px_8px_rgba(0,119,255,0.35),0_0_20px_rgba(0,210,255,0.2),inset_0_1px_0_rgba(255,255,255,0.35)] transition duration-300 hover:brightness-110 hover:shadow-[0_6px_16px_rgba(0,119,255,0.45),0_0_28px_rgba(0,210,255,0.35),inset_0_1px_0_rgba(255,255,255,0.35)] motion-safe:hover:-translate-y-0.5"
             >
               Start Free Trial
-            </a>
+            </TrackedLink>
           </div>
         </div>
       </header>
@@ -343,7 +349,9 @@ export default function LandingPage() {
                 <p className="mt-[1.38em]">Go beyond opinions and ratings. Understand the assumptions, frameworks, and analysis behind the numbers.</p>
               </div>
               <div className={ENTER} style={enterDelay(360)}>
-                <PrimaryCta href={OFFERING_URL}>Start Your Free Trial</PrimaryCta>
+                <PrimaryCta href={OFFERING_URL} track={trialCta("hero", "Start Your Free Trial")}>
+                  Start Your Free Trial
+                </PrimaryCta>
               </div>
             </div>
             <p className={cn("text-[14px] font-medium leading-[1.18] tracking-[-0.28px] text-white/70", ENTER)} style={enterDelay(460)}>
@@ -682,7 +690,9 @@ export default function LandingPage() {
               Begin exploring professional investment analysis with the reasoning behind the numbers.
             </p>
             <div className="relative mt-6 flex flex-col items-center gap-1">
-              <PrimaryCta href={OFFERING_URL}>Start Your Free Trial</PrimaryCta>
+              <PrimaryCta href={OFFERING_URL} track={trialCta("closing", "Start Your Free Trial")}>
+                Start Your Free Trial
+              </PrimaryCta>
               <p className="pt-2 font-mono text-[11px] leading-[16.5px] text-white/70">Cancel anytime</p>
             </div>
           </section>

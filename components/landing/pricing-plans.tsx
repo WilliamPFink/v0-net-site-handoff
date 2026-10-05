@@ -4,6 +4,7 @@
 import { useState, type ReactNode } from "react"
 import { cn } from "@/lib/utils"
 import { OFFERING_URL } from "@/lib/links"
+import { trackCta } from "@/lib/analytics"
 
 // Pricing / paywall implemented from Figma "ClearGuidenceStudio" → "Paywall" page
 // (Monthly 160:1221 / 160:3027 / 160:3336, Yearly 160:5180 / 160:4912 / 160:4606).
@@ -112,6 +113,21 @@ const PRODUCTS: Product[] = [
 const featuresFor = (p: Product, period: Period) => (p.features[period].length ? p.features[period] : p.features.monthly)
 const checkoutUrl = (p: Product, period: Period) => `${OFFERING_URL}?tier=${p.tierSlug}&billing=${period}`
 
+/** "$1,919.88/year" → 1919.88 */
+const amount = (price: string) => Number(price.replace(/[^0-9.]/g, ""))
+
+function trackPlanClick(p: Product, period: Period) {
+  const price = amount(period === "yearly" ? p.yearly.now : p.monthlyPrice)
+  trackCta({
+    event: "begin_checkout",
+    location: "pricing",
+    label: `Get ${p.tab} at $0 Today`,
+    value: price,
+    currency: "USD",
+    items: [{ item_id: p.tierSlug, item_name: p.tab, item_variant: period, price }],
+  })
+}
+
 const FADE = "motion-safe:animate-in motion-safe:fade-in motion-safe:animation-duration-300"
 
 /* -------------------------------------------------------------------------- */
@@ -197,7 +213,7 @@ function PriceCard({ product, period }: { product: Product; period: Period }) {
           )}
         </p>
       </div>
-      <a href={checkoutUrl(product, period)} className="group/cta block rounded-[8px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2b7fff]">
+      <a href={checkoutUrl(product, period)} onClick={() => trackPlanClick(product, period)} className="group/cta block rounded-[8px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2b7fff]">
         <span
           className={cn(
             "flex items-center justify-center bg-[#2b7fff] px-4 py-5 text-center text-[16px] font-bold uppercase leading-3 text-white shadow-[inset_0_-4px_33px_#6fa5fb] transition duration-200 group-hover/cta:brightness-110 min-[400px]:text-[18px]",
