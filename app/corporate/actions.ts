@@ -3,7 +3,7 @@
 import { db } from "@/lib/db"
 import { firmIntake } from "@/lib/db/schema"
 
-const VALID_TIERS = ["Essential", "Advisor", "Advisor Pro"] as const
+const VALID_TIERS = ["Foundation", "Analyst", "Advisor Pro"] as const
 
 export type FirmIntakeState = {
   status: "idle" | "success" | "error"

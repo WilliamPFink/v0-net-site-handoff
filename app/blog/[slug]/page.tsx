@@ -355,7 +355,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
               Turn these ideas into defensible models.
             </h2>
             <p className="text-sm text-[#A1A1AA] leading-relaxed mt-3 max-w-xl text-pretty">
-              Subscribe to the Essential, Advisor, or Advisor Pro tiers to access live valuation terminals, Efficient
+              Subscribe to the Foundation, Analyst, or Advisor Pro tiers to access live valuation terminals, Efficient
               Frontier modeling, and 1,000-trial Monte Carlo downside-protection tools.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 mt-6">

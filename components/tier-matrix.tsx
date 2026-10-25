@@ -40,7 +40,7 @@ const TIERS: Tier[] = [
   {
     id: "essential",
     layer: "LAYER 01",
-    name: "Essential",
+    name: "Foundation",
     badge: "CORE WORKSPACE",
     badgeClass: "bg-[#1E1B4B] text-blue-300 border-blue-900",
     accent: "text-blue-400",
@@ -48,7 +48,7 @@ const TIERS: Tier[] = [
     glow: "#3b82f6",
     cardBorder: "border-[#27272A] hover:border-blue-500/20",
     description:
-      "Ditch generic, laggy retail tools. The Essential workspace delivers clean, institutional-grade equity lookup terminals designed to unmask true intrinsic value. Fine-tune growth assumptions instantly and control the narrative before consensus models distort the trend.",
+      "Ditch generic, laggy retail tools. The Foundation workspace delivers clean, institutional-grade equity lookup terminals designed to unmask true intrinsic value. Fine-tune growth assumptions instantly and control the narrative before consensus models distort the trend.",
     capabilities: [
       { bold: "Fair Value Search Engine:", text: "High-speed equity lookup terminal filtering individual tickers cleanly." },
       { bold: "Stock Screening & Watchlists:", text: "Build dynamic equity screens and track target asset performance seamlessly." },
@@ -56,14 +56,14 @@ const TIERS: Tier[] = [
       { bold: "Manual DCF Adjustments:", text: "Fine-tune core assumptions using live Growth Rate and Terminal P/E sliders." },
       { bold: "Confidence Level Metrics:", text: "Instant calculation validation displays tracking model probability spreads." },
     ],
-    ctaText: "Deploy Essential Engine",
+    ctaText: "Subscribe to Foundation",
     ctaHref: `${OFFERING_URL}?tier=essential`,
     ctaClass: "bg-[#18181B] hover:bg-[#222227] text-white border border-[#27272A]",
     ctaArrow: "text-blue-400",
     benefit: {
       header: "Unmasking True Market Value",
       subheader:
-        "The Essential tier strips away the noise, lag, and biased price targets of generic retail finance sites, giving you an uncompromised foundation to evaluate equities with complete transparency.",
+        "The Foundation tier strips away the noise, lag, and biased price targets of generic retail finance sites, giving you an uncompromised foundation to evaluate equities with complete transparency.",
       points: [
         {
           bold: "Institutional Data at Your Fingertips",
@@ -78,13 +78,13 @@ const TIERS: Tier[] = [
           text: "Stay seamlessly ahead of market volatility. Set up parameter alerts that trigger strictly based on your specific rules and model filters, ensuring you only receive the direct market news and information that truly impacts your thesis.",
         },
       ],
-      cta: "Start Essential Workspace Trial \u2192",
+      cta: "Subscribe to Foundation \u2192",
     },
   },
   {
     id: "advisor",
     layer: "LAYER 02",
-    name: "Advisor",
+    name: "Analyst",
     badge: "MPT OPTIMIZER",
     badgeClass: "bg-[#064E3B] text-emerald-300 border-emerald-900",
     accent: "text-emerald-400",
@@ -95,20 +95,20 @@ const TIERS: Tier[] = [
       "Engineered for independent wealth managers who use visual conviction to scale their practice. Seamlessly model custom allocations, map assets against the Efficient Frontier, and pinpoint peak mathematical efficiency in real time. Built to turn complex portfolio construction into an engaging client conversation.",
     featured: "PROFESSIONAL SCALE",
     capabilities: [
-      { bold: "All Essential Features Included" },
+      { bold: "All Foundation Features Included" },
       { bold: "Portfolio Construction Canvas:", text: "Build and dynamically balance custom multi-asset weighting structures." },
       { bold: "Efficient Frontier Mapping:", text: "Instantly plot calculated risk assets across expected return vs. variance axes." },
       { bold: "Sharpe Ratio Optimization:", text: "Trigger integrated matrix algorithms to rapidly isolate peak mathematical efficiency." },
       { bold: "One-Click Client Handouts:", text: "Export clean, high-contrast visual summaries of your custom allocations and optimization curves directly from your workspace." },
     ],
-    ctaText: "Deploy Advisor Architecture",
+    ctaText: "Subscribe to Analyst",
     ctaHref: `${OFFERING_URL}?tier=advisor`,
     ctaClass: "bg-white hover:bg-[#E4E4E7] text-[#0A0A0C] font-bold shadow-xl",
     ctaArrow: "text-emerald-600",
     benefit: {
       header: "Elevating Your Visual Practice",
       subheader:
-        "The Advisor tier is custom-engineered for independent wealth managers who want to build immediate client trust and visual conviction while designing resilient, optimized portfolios.",
+        "The Analyst tier is custom-engineered for independent wealth managers who want to build immediate client trust and visual conviction while designing resilient, optimized portfolios.",
       points: [
         {
           bold: "Interactive Allocation Canvases",
@@ -123,7 +123,7 @@ const TIERS: Tier[] = [
           text: "Export beautifully structured, high-contrast visual summaries of your custom models directly from your tablet workspace. Deliver professional clarity that clients can easily digest and share with their families.",
         },
       ],
-      cta: "Scale Your Practice with Advisor \u2192",
+      cta: "Subscribe to Analyst \u2192",
     },
   },
   {
@@ -139,14 +139,14 @@ const TIERS: Tier[] = [
     description:
       "The ultimate enterprise suite for high-end practices demanding absolute analytical dominance. Run advanced, 1,000-trial simulation models to stress-test market uncertainty, coordinate multi-seat teams seamlessly, and instantly export compliance-ready justification reports to defend your fiduciary recommendations.",
     capabilities: [
-      { bold: "All Advisor Features Included" },
+      { bold: "All Analyst Features Included" },
       { bold: "Monte Carlo Simulators:", text: "Launch 1,000 iterative data trials projecting true 10-year probabilistic wealth horizons." },
       { bold: "Active Team Seat Allocation:", text: "Provision and track multi-user license pools (e.g., 5/10 seats) dynamically." },
       { bold: "Uptime Sync Guardrails:", text: "High-availability secure caching ensures customized client models stay persistent." },
       { bold: "FIA Lookback Terminal:", text: "Run empirical 5 and 10-year historical annuity backtests with custom variable constraints instantly." },
       { bold: "Fiduciary Justification Reports:", text: "Instantly generate comprehensive, compliant data books mapping out your FIA Lookbacks and Monte Carlo trials to archive in your client files." },
     ],
-    ctaText: "Deploy Institutional Suite",
+    ctaText: "Subscribe to Advisor Pro",
     ctaHref: `${OFFERING_URL}?tier=pro`,
     ctaClass: "bg-[#18181B] hover:bg-[#222227] text-white border border-[#27272A]",
     ctaArrow: "text-purple-400",
@@ -168,7 +168,7 @@ const TIERS: Tier[] = [
           text: "Instantly generate and export comprehensive, defense-ready fiduciary justification summaries. Back up every single custom recommendation with transparent empirical data, keeping your firm completely insulated and audited cleanly.",
         },
       ],
-      cta: "Deploy Advisor Pro Enterprise Suite \u2192",
+      cta: "Subscribe to Advisor Pro \u2192",
     },
   },
 ]
