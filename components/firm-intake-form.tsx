@@ -4,7 +4,7 @@ import { useActionState } from "react"
 import { CheckCircle2, AlertCircle, Loader2 } from "lucide-react"
 import { submitFirmIntake, type FirmIntakeState } from "@/app/corporate/actions"
 
-const TIERS = ["Essential", "Advisor", "Advisor Pro"] as const
+const TIERS = ["Foundation", "Analyst", "Advisor Pro"] as const
 
 const initialState: FirmIntakeState = { status: "idle", message: "" }
 

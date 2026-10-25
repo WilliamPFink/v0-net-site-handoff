@@ -11,7 +11,7 @@ export const contentType = OG_CONTENT_TYPE
 export default async function Image() {
   return renderOgCard({
     section: "Capabilities",
-    pill: "Essential · Advisor · Advisor Pro",
+    pill: "Foundation · Analyst · Advisor Pro",
     title: "Platform Capabilities & Feature Scaling",
     description:
       "Explore the explicit feature layers powering ClearGuidance Studio, engineered for every analytical scale and compliance requirement.",

@@ -7,7 +7,7 @@ import { OfferingCta } from "@/components/offering-cta"
 export const metadata: Metadata = {
   title: "Platform Capabilities & Feature Scaling",
   description:
-    "Explore the explicit feature layers powering ClearGuidance Studio — Essential, Advisor, and Advisor Pro tiers engineered for every analytical scale and compliance requirement.",
+    "Explore the explicit feature layers powering ClearGuidance Studio — Foundation, Analyst, and Advisor Pro tiers engineered for every analytical scale and compliance requirement.",
   alternates: {
     canonical: "/product-tiers",
   },
@@ -132,8 +132,8 @@ export default async function ProductTiersDeepDive({
             <thead>
               <tr className="border-b border-[#1F1F23] bg-[#0E0E11]">
                 <th className="p-4 text-white">Analytical Engine</th>
-                <th className="p-4 text-blue-400">Essential</th>
-                <th className="p-4 text-emerald-400">Advisor</th>
+                <th className="p-4 text-blue-400">Foundation</th>
+                <th className="p-4 text-emerald-400">Analyst</th>
                 <th className="p-4 text-purple-400">Advisor Pro</th>
               </tr>
             </thead>
