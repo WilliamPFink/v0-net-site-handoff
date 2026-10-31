@@ -22,6 +22,7 @@ export function SiteFooter() {
           </a>
           <a
             href={OFFERING_URL}
+            data-trial-cta=""
             className="text-xs text-[#71717A] font-mono hover:text-white transition-colors block"
           >
             Subscription Offerings

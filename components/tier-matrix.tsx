@@ -247,6 +247,7 @@ function TierCard({
       <div className="pt-8">
         <a
           href={tier.ctaHref}
+          data-trial-cta=""
           className={`w-full text-center text-xs font-mono py-3 rounded-lg flex items-center justify-center gap-2 transition-all group ${tier.ctaClass}`}
         >
           <span>{tier.ctaText}</span>
@@ -284,6 +285,7 @@ function BenefitPanel({ tier }: { tier: Tier }) {
       <div>
         <a
           href={tier.ctaHref}
+          data-trial-cta=""
           className="inline-flex items-center justify-center rounded-lg bg-[#0A0A0C] text-white text-sm font-semibold px-6 py-3 border border-blue-500/50 shadow-[0_0_20px_rgba(59,130,246,0.3)] hover:scale-105 hover:border-blue-400 transition-all duration-200"
         >
           {tier.benefit.cta}

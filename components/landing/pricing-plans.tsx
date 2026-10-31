@@ -213,7 +213,7 @@ function PriceCard({ product, period }: { product: Product; period: Period }) {
           )}
         </p>
       </div>
-      <a href={checkoutUrl(product, period)} onClick={() => trackPlanClick(product, period)} className="group/cta block rounded-[8px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2b7fff]">
+      <a href={checkoutUrl(product, period)} data-trial-cta="" onClick={() => trackPlanClick(product, period)} className="group/cta block rounded-[8px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2b7fff]">
         <span
           className={cn(
             "flex items-center justify-center bg-[#2b7fff] px-4 py-5 text-center text-[16px] font-bold uppercase leading-3 text-white shadow-[inset_0_-4px_33px_#6fa5fb] transition duration-200 group-hover/cta:brightness-110 min-[400px]:text-[18px]",
