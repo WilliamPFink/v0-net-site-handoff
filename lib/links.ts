@@ -14,3 +14,6 @@ export function tierUrl(tier: string): string {
 // new users to the first lesson.
 export const STUDIO_URL = "https://clearguidancestudio.com"
 export const ACADEMY_URL = "https://clearguidancestudio.com/academy"
+
+export const APP_STORE_URL = "https://apps.apple.com/app/id6787771879"
+export const GOOGLE_PLAY_URL = "https://play.google.com/store/apps/details?id=com.clearguidancestudio.app"

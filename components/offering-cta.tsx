@@ -8,6 +8,7 @@ export function OfferingCta({ className = "" }: { className?: string }) {
   return (
     <a
       href={OFFERING_URL}
+      data-trial-cta=""
       className={`group inline-flex items-center gap-1.5 bg-blue-500 hover:bg-blue-400 text-[#04101F] text-xs font-mono font-bold px-4 py-2 rounded-full transition-all duration-200 shadow-[0_0_20px_rgba(59,130,246,0.35)] whitespace-nowrap ${className}`}
     >
       <span>Start Your Free Trial</span>

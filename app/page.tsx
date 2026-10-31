@@ -94,6 +94,7 @@ function PrimaryCta({ href, track, children, className }: { href: string; track:
     <TrackedLink
       href={href}
       track={track}
+      data-trial-cta=""
       className={cn(
         "relative inline-flex items-center justify-center rounded-full bg-[linear-gradient(to_right,#00d2ff,#0077ff)] px-7 py-3 font-mono text-[14px] font-bold uppercase leading-[1.18] tracking-[-0.28px] text-black whitespace-nowrap",
         "shadow-[0_2px_8px_rgba(0,119,255,0.35),0_0_20px_rgba(0,210,255,0.2),inset_0_1px_0_rgba(255,255,255,0.35)] transition duration-300 ease-out hover:brightness-110 hover:shadow-[0_8px_22px_rgba(0,119,255,0.45),0_0_32px_rgba(0,210,255,0.35),inset_0_1px_0_rgba(255,255,255,0.35)] motion-safe:hover:-translate-y-0.5 motion-safe:active:translate-y-0",
@@ -311,7 +312,9 @@ export default function LandingPage() {
             </a>
             <TrackedLink
               href={OFFERING_URL}
-              track={trialCta("header", "Start Free Trial")}
+                track={trialCta("header", "Start Free Trial")}
+                data-trial-cta=""
+
               className="rounded-full bg-[linear-gradient(to_right,#00d2ff,#0088ff)] px-4 py-1.5 font-mono text-[10px] font-bold uppercase leading-4 text-[#031422] shadow-[0_2px_8px_rgba(0,119,255,0.35),0_0_20px_rgba(0,210,255,0.2),inset_0_1px_0_rgba(255,255,255,0.35)] transition duration-300 hover:brightness-110 hover:shadow-[0_6px_16px_rgba(0,119,255,0.45),0_0_28px_rgba(0,210,255,0.35),inset_0_1px_0_rgba(255,255,255,0.35)] motion-safe:hover:-translate-y-0.5"
             >
               Start Free Trial

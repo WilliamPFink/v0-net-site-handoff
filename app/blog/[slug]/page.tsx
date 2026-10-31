@@ -361,6 +361,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             <div className="flex flex-col sm:flex-row gap-3 mt-6">
               <a
                 href={OFFERING_URL}
+                data-trial-cta=""
                 className="inline-flex items-center justify-center gap-2 bg-blue-500 text-[#04101F] text-sm font-bold px-5 py-3 rounded-lg hover:bg-blue-400 transition-colors group shadow-[0_0_20px_rgba(59,130,246,0.35)]"
               >
                 Start Your Free Trial

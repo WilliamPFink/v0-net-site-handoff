@@ -46,6 +46,7 @@ export function FreeTrialBubble() {
 
         <a
           href={TRIAL_URL}
+          data-trial-cta=""
           className="group relative flex items-center gap-2.5 rounded-full bg-blue-500 py-3.5 pl-5 pr-6 font-mono text-sm font-bold text-[#04101F] shadow-[0_8px_30px_rgba(59,130,246,0.35)] transition-all duration-200 hover:bg-blue-400 hover:shadow-[0_10px_38px_rgba(59,130,246,0.5)]"
         >
           <span className="relative flex h-2.5 w-2.5 shrink-0">
