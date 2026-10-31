@@ -222,6 +222,7 @@ function LeadCaptureForm({
 
         <a
           href={OFFERING_URL}
+          data-trial-cta=""
           className="group flex w-full items-center justify-center gap-2 rounded-sm bg-blue-500 py-3 text-xs font-bold uppercase tracking-[0.15em] text-[#04101F] transition-colors hover:bg-blue-400"
         >
           {ctaLabel}

@@ -4,6 +4,7 @@ import Script from "next/script"
 import { Geist, JetBrains_Mono } from "next/font/google"
 import { SiteFooter } from "@/components/site-footer"
 import { SalesFunnelAgent } from "@/components/sales-funnel-agent"
+import { AppDownloadDialog } from "@/components/app-download-dialog"
 import "./globals.css"
 
 const geistSans = Geist({ subsets: ["latin"], variable: "--font-geist-sans" })
@@ -132,6 +133,7 @@ export default function RootLayout({
         {children}
         <SiteFooter />
         <SalesFunnelAgent />
+        <AppDownloadDialog />
         {process.env.NODE_ENV === 'production' && <Analytics />}
         {/* Google tag (gtag.js) — site-wide GA4 */}
         {process.env.NODE_ENV === 'production' && (
