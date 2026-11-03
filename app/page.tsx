@@ -32,6 +32,8 @@ export const metadata: Metadata = {
 
 const A = "/landing"
 
+const APP_STORE_URL = "https://apps.apple.com/us/app/clearguidance-studio/id6787771879"
+
 // Shared design tokens from the Figma file
 const GRADIENT_TEXT =
   "bg-[linear-gradient(to_left,#ffffff_51.738%,#f4f8fe_61.251%,#3880f4)] bg-clip-text text-transparent"
@@ -360,10 +362,13 @@ export default function LandingPage() {
                 <p>Explore company valuations, financial models, and the reasoning behind investment decisions.</p>
                 <p className="mt-[1.38em]">Go beyond opinions and ratings. Understand the assumptions, frameworks, and analysis behind the numbers.</p>
               </div>
-              <div className={ENTER} style={enterDelay(360)}>
+              <div className={cn("flex flex-wrap items-center gap-4", ENTER)} style={enterDelay(360)}>
                 <PrimaryCta href={OFFERING_URL} track={trialCta("hero", "Start Your Free Trial")}>
                   Start Your Free Trial
                 </PrimaryCta>
+                <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" className="shrink-0">
+                  <img src={`${A}/download_app_store.svg`} alt="Download on the App Store" className="h-12 w-auto shadow-[0_1px_3px_rgba(0,0,0,0.4)]" />
+                </a>
               </div>
             </div>
             <p className={cn("text-[14px] font-medium leading-[1.18] tracking-[-0.28px] text-white/70", ENTER)} style={enterDelay(460)}>
