@@ -47,13 +47,9 @@ export function AppDownloadDialog() {
           <X className="h-4 w-4" aria-hidden="true" />
         </button>
 
-        <Image
-          src="/apple-icon.png"
-          alt=""
-          width={64}
-          height={64}
-          className="h-16 w-16 rounded-2xl shadow-[0_0_24px_rgba(59,130,246,0.35)]"
-        />
+        <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-[#27272A] bg-[#0B0F17] shadow-[0_0_24px_rgba(59,130,246,0.35)]">
+          <Image src="/landing/logo-mark.svg" alt="" width={44} height={33} unoptimized className="h-[33px] w-11" />
+        </div>
 
         <div className="flex flex-col gap-2">
           <p className="font-mono text-[11px] font-bold uppercase tracking-[0.2em] text-blue-400">7-Day Free Trial</p>
