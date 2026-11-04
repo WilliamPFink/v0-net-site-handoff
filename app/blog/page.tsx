@@ -39,19 +39,12 @@ export default function BlogDirectoryPage() {
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <Link href="/#top" className="flex items-center gap-2.5">
             <Image
-              src="/net/cgs-icon.jpeg"
-              alt="ClearGuidance Studio emblem"
-              width={36}
-              height={36}
-              className="h-9 w-9 object-contain"
-              priority
-            />
-            <Image
-              src="/net/cgs-wordmark.jpeg"
+              src="/landing/logo.svg"
               alt="ClearGuidance Studio, Inc."
-              width={150}
-              height={42}
-              className="h-7 w-auto object-contain"
+              width={188}
+              height={40}
+              unoptimized
+              className="h-8 w-auto"
               priority
             />
           </Link>
