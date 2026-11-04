@@ -3,7 +3,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { Fragment, type ReactNode } from "react"
 import { cn } from "@/lib/utils"
-import { OFFERING_URL, STUDIO_URL } from "@/lib/links"
+import { GOOGLE_PLAY_URL, OFFERING_URL, STUDIO_URL } from "@/lib/links"
 import type { CtaTrack } from "@/lib/analytics"
 import { Reveal } from "@/components/landing/reveal"
 import { PricingPlans } from "@/components/landing/pricing-plans"
@@ -371,6 +371,15 @@ export default function LandingPage() {
                   track={{ event: "sign_up", location: "hero", label: "App Store" }}
                 >
                   <img src={`${A}/download_app_store.svg`} alt="Download on the App Store" className="h-12 w-auto shadow-[0_1px_3px_rgba(0,0,0,0.4)]" />
+                </TrackedLink>
+                <TrackedLink
+                  href={GOOGLE_PLAY_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="shrink-0"
+                  track={{ event: "sign_up", location: "hero", label: "Google Play" }}
+                >
+                  <img src="/badges/google-play.svg" alt="Get it on Google Play" className="h-12 w-auto shadow-[0_1px_3px_rgba(0,0,0,0.4)]" />
                 </TrackedLink>
               </div>
             </div>
